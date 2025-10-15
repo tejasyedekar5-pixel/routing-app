@@ -4,8 +4,8 @@ import NavBar from "./components/navbarComponent/NavBar";
 function App() {
   return (
     <div>
-       <NavBar/>
-       <Outlet/>
+      <NavBar />
+      <Outlet />
     </div>
   );
 }

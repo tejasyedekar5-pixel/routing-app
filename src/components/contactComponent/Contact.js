@@ -19,9 +19,9 @@ export default function Contact() {
     <input type="text" className="form-control" id="username"
   {...register('username',{required:true,minLength:3, maxLength:10})}/>
   <div class="form-text text-danger">
-       {formState.errors.username && formState.errors.username.type=='required' && "UserName is required"}
-       {formState.errors.username && formState.errors.username.type=='minLength' && "Min 3 characters required"}
-       {formState.errors.username && formState.errors.username.type=='maxLength' && "Max 10 characters allowed"}
+       {formState.errors.username && formState.errors.username.type==='required' && "UserName is required"}
+       {formState.errors.username && formState.errors.username.type==='minLength' && "Min 3 characters required"}
+       {formState.errors.username && formState.errors.username.type==='maxLength' && "Max 10 characters allowed"}
     </div>
   </div>
   <div className="mb-3">
@@ -29,9 +29,9 @@ export default function Contact() {
   <input type="number" className="form-control" id="userage"
   {...register('userage',{required:true,min:18, max:30})}/>
  <div class="form-text text-danger">
-     {formState.errors.userage && formState.errors.userage.type=='required' && "UserAge is required"}
-     {formState.errors.userage && formState.errors.userage.type=='min' && "Min age required is 18"}
-     {formState.errors.userage && formState.errors.userage.type=='max' && "Max age required is 30"}
+     {formState.errors.userage && formState.errors.userage.type==='required' && "UserAge is required"}
+     {formState.errors.userage && formState.errors.userage.type==='min' && "Min age required is 18"}
+     {formState.errors.userage && formState.errors.userage.type==='max' && "Max age required is 30"}
 
   </div>
    </div>

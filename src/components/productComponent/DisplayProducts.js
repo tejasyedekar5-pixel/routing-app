@@ -11,25 +11,25 @@ export default function DisplayProducts(props) {
      {
        products && products.map(product => {
          return (
-           <div className="col-3">
-               <div class="card" style={{width:16+'rem'}}>
-               <img src={product.thumbnail} class="card-img-top" alt="..."/>
-               <div class="card-body">
-                 <h5 class="card-title">{product.title.substring(0,15)}</h5>
-                 <p class="card-text">{product.description.substring(0,75)}...</p>
+           <div key={product.id} className="col-3">
+               <div className="card" style={{width:16+'rem'}}>
+               <img src={product.thumbnail} className="card-img-top" alt="..."/>
+               <div className="card-body">
+                 <h5 className="card-title">{product.title.substring(0,15)}</h5>
+                 <p className="card-text">{product.description.substring(0,75)}...</p>
                  <div className='d-flex justify-content-between'>
-                   <p class="card-text">&#8377;{product.price}</p>
-                   <p class="card-text fw-bold">{product.category}</p>
+                   <p className="card-text">&#8377;{product.price}</p>
+                   <p className="card-text fw-bold">{product.category}</p>
                 </div>
                 <div className='d-flex justify-content-between'>
-                  <a href="#" class="btn btn-primary">Add to Cart</a>
-                  <Link to={`/products/${product.id}`} class="btn btn-success">View More</Link>
+                  <Link to={'/'} className="btn btn-primary">Add to Cart</Link>
+                  <Link to={`/products/${product.id}`} className="btn btn-success">View More</Link>
                 </div>
             </div>
      </div>
     </div>
 
-    ) 
+    )
 
     })
     }

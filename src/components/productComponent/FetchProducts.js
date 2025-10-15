@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import DisplayProducts from './DisplayProducts'
 
-export default function FetchProducts()
+export default function FetchProduct()
  {
   let[products, setProducts]=useState(null)
   async function fetchAllProducts()

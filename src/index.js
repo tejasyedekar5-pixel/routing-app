@@ -9,9 +9,8 @@ import Error from './components/errorComponent/Error.js';
 import Contact from './components/contactComponent/Contact.js';
 import Home from './components/homeComponent/Home.js';
 import FetchProducts from './components/productComponent/FetchProducts.js';
-import ProductDetails from './components/productComponent/ProductDetails.js';
-
-
+import FetchProductById from './components/productComponent/FetchProductById.js';
+import DisplayProductById from './components/productComponent/DisplayProductById.js';
 
 let routes=createBrowserRouter([
   {
@@ -33,8 +32,8 @@ let routes=createBrowserRouter([
         element:<FetchProducts/>
       },
       {
-        path:"/product/:productId",
-        element:<ProductDetails/>
+        path:"/products/:productId",
+        element:<FetchProductById/>
       }
     ]
   }
